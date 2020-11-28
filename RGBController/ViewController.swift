@@ -92,7 +92,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setLED(_ w: UInt8, _ r: UInt8, _ g: UInt8, _ b: UInt8) {
-        invoke("set?\(w)_\(r)_\(g)_\(b)")
+        invoke("set?\(r)_\(g)_\(b)_\(w)")
     }
     
     func invoke(_ cmd: String) {

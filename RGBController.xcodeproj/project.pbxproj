@@ -60,8 +60,8 @@
 				1D4A5DA42571338A00A8871D /* SceneDelegate.swift */,
 				1D4A5DA62571338A00A8871D /* ViewController.swift */,
 				1D4A5DA82571338A00A8871D /* Main.storyboard */,
-				1D4A5DAB2571338D00A8871D /* Assets.xcassets */,
 				1D4A5DAD2571338D00A8871D /* LaunchScreen.storyboard */,
+				1D4A5DAB2571338D00A8871D /* Assets.xcassets */,
 				1D4A5DB02571338D00A8871D /* Info.plist */,
 			);
 			path = RGBController;

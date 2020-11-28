@@ -92,15 +92,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setLED(_ w: UInt8, _ r: UInt8, _ g: UInt8, _ b: UInt8) {
-//        let value = UInt32(w) << 24
-//                  + UInt32(r) << 16
-//                  + UInt32(g) << 8
-//                  + UInt32(b)
         invoke("set?\(w)_\(r)_\(g)_\(b)")
     }
     
     func invoke(_ cmd: String) {
-        URLSession.shared.dataTask(with: urlRoot.appendingPathComponent(cmd)).resume()
+        URLSession.shared.dataTask(with: URL(string: "\(urlRoot.absoluteString)\(cmd)")!).resume()
     }
 }
 
